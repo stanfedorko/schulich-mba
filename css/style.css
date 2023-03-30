@@ -1,0 +1,291 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  color: #0C1D2E;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.text-white {
+  color: #F9FCFF;
+}
+
+.bg-grey {
+  background-color: #EDF1F5;
+}
+
+.bg-warning {
+  background-color: #FFEA9F !important;
+}
+
+.text-color-inherit {
+  color: inherit;
+}
+
+.small, small {
+  font-size: 12px;
+}
+
+.mw-600 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section-title {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 38px;
+  }
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section-bg-abstract {
+  background-image: url(../img/abstract-bg.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fbfdff;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --- HERO SECTION --- */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px 0;
+}
+.hero-section--block {
+  position: relative;
+  overflow: hidden;
+}
+.hero-section--content {
+  position: relative;
+  z-index: 4;
+}
+.hero-section--blink {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  background-color: #D9D9D9;
+  padding-top: 125px;
+  padding-bottom: 200px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-section--blink::before {
+  content: "";
+  display: inline-block;
+  background: rgba(0,0,0,0.5);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.hero-section--title {
+  font-size: 100px;
+  color: #F9FCFF;
+}
+.hero-section--subtitle {
+  font-size: 25px;
+  color: #F9FCFF;
+}
+
+@media (max-width: 1199px) {
+  .hero-section--title {
+    font-size: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-section--title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-section--title {
+    font-size: 52px;
+  }
+  .hero-section--subtitle {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section--title {
+    font-size: 48px;
+  }
+  .hero-section--subtitle {
+    font-size: 20px;
+  }
+}
+
+/* --- EMD HERO SECTION --- */
+
+
+
+
+
+
+
+
+
+/* --- CARDS --- */
+
+.card-sm {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  max-width: 375px;
+  background-color: transparent;
+}
+
+.card-sm:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.card-sm:hover .card-img img {
+  transform: scale(1.05);
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.card-title {
+  font-size: 25px;
+  /* line-height: 1.3; */
+}
+
+@media (max-width: 767px) {
+  .card-title {
+    font-size: 20px;
+  }
+}
+
+/* --- END CARDS --- */
+
+
+
+
+
+/* --- SLIDER --- */
+.slideer-content {
+
+}
+.slideer-content--text {
+
+}
+.slideer-content--img-video {
+  position: relative;
+  overflow: hidden;
+}
+.slideer-content--img-video img {
+  width: 100%;
+  max-width: 100%;
+}
+.owl-carousel .owl-video-wrapper {
+  min-height: 420px;
+  overflow: hidden;
+  background-color: #ccc;
+  border-radius: var(--bs-border-radius-lg);
+}
+.slideer-content--img-video video {}
+
+/* --- END SLIDER --- */
+
+
+
+
+
+
+
+
+
+
+
+/* -- TECH ACCORDION -- */
+.tech-accordion {}
+.tech-accordion .accordion-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.tech-accordion .accordion-item {
+  border: none;
+  margin-bottom: 20px;
+}
+.tech-accordion .accordion-button {
+  background-color: #FFEA9F;
+  border-radius: 5px;
+}
+
+/* -- END TECH ACCORDION -- */
+
+
+
+
+
+/* --- TABLE --- */
+.table td,
+.table th {
+  padding: 1rem;
+}
+.table thead th:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.table thead th:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.table tbody td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.table tbody td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* --- END TABLE --- */
