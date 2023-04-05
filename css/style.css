@@ -344,6 +344,17 @@ body {
   background-position: right bottom;
 }
 
+.btn-warning {
+  background-color: #F5E19B;
+  border: none;
+}
+:not(.btn-check)+.btn-warning:active,
+.btn-warning.active,
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #e3d9b6;
+}
+
 
 
 
