@@ -573,5 +573,9 @@ body {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+tbody tr,
+tbody tr:nth-of-type(2n) {
+  background-color: #fff;
+}
 /* --- END TABLE --- */
 
