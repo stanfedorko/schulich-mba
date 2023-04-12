@@ -282,6 +282,11 @@ body {
   line-height: 1.2;
 }
 
+h5.smaller,
+.h5.smaller {
+  font-size: 18px;
+}
+
 .text-white {
   color: #F9FCFF;
 }
@@ -590,3 +595,52 @@ tbody tr:nth-of-type(2n) {
 }
 /* --- END TABLE --- */
 
+
+
+
+/* --- CARD TEAM --- */
+.cards-team-container {
+  display: flex;
+  row-gap: 40px;
+  column-gap: 25px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+.card-team {
+  max-width: 215px;
+  border: 0;
+  position: relative;
+  overflow: visible;
+}
+.card-team::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -13px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d3c68b;
+}
+@media (max-width: 767px) {
+  .card-team::after {
+    display: none;
+  }
+}
+@media (max-width: 505px) {
+  .card-team {
+    max-width: 176px;
+  }
+}
+@media (max-width: 424px) {
+  .card-team {
+    max-width: 150px;
+  }
+}
+@media (max-width: 374px) {
+  .card-team {
+    max-width: 100%;
+  }
+}
+/* --- END CARD TEAM --- */
