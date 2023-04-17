@@ -290,6 +290,9 @@ h5.smaller,
 .text-white {
   color: #F9FCFF;
 }
+.text-grey-1 {
+  color: #53606D;
+}
 
 .bg-grey {
   background-color: #EDF1F5;
@@ -360,9 +363,12 @@ h5.smaller,
   background-position: right bottom;
 }
 
+.border-start-primary-4 {
+  border-left: 4px solid #2960A7;
+}
+
 
 /* btns */
-
 .btn-warning {
   --bs-btn-color: #000;
   --bs-btn-bg: #F5E19B;
@@ -591,6 +597,18 @@ h5.smaller,
 
 
 /* -- TECH ACCORDION -- */
+.accordion {
+  --bs-accordion-btn-icon-width: 3rem;
+  --bs-accordion-btn-icon: url("/img/icon-arr-down.svg");
+  --bs-accordion-btn-active-icon: url("/img/icon-arr-down.svg");
+}
+.accordion-button::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+}
+
 .tech-accordion {}
 .tech-accordion .accordion-body {
   padding-top: 40px;
