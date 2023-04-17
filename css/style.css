@@ -288,10 +288,13 @@ h5.smaller,
 }
 
 .text-white {
-  color: #F9FCFF;
+  color: #F9FCFF !important;
+}
+.text-black {
+  color: #0C1D2E !important;
 }
 .text-grey-1 {
-  color: #53606D;
+  color: #53606D !important;
 }
 
 .bg-grey {
