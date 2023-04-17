@@ -315,6 +315,9 @@ h5.smaller,
   font-size: 12px;
 }
 
+.fz-18 {
+  font-size: 18px !important;
+}
 .fz-25 {
   font-size: 25px !important;
 }
