@@ -674,6 +674,9 @@ tbody tr:nth-of-type(2n) {
   position: relative;
   overflow: visible;
 }
+.card-team:hover {
+  text-decoration: underline;
+}
 .card-team.card-team--line::after {
   content: "";
   display: inline-block;
@@ -683,6 +686,9 @@ tbody tr:nth-of-type(2n) {
   width: 1px;
   height: 100%;
   background-color: #d3c68b;
+}
+.card-team.card-team--line:last-child::after {
+  display: none;
 }
 @media (max-width: 767px) {
   .card-team.card-team--line::after {
