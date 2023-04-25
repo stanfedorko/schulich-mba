@@ -86,36 +86,45 @@
           Program Highlights
         </h2>
 
-        <div class="d-flex row-gap-5 column-gap-4 justify-content-between align-items-start flex-wrap">
+        <!-- <div class="d-flex row-gap-5 column-gap-4 justify-content-between align-items-start flex-wrap">
 
-          <a href="#0" class="card card-sm rounded-2 border-0">
-            <div class="card-img rounded-2 mb-3">
-              <img src="./img/program-highlights-img-1.jpg" alt="">
-            </div>
-            <h4 class="card-title mb-0">
-              16-month (4-term) full-time program
-            </h4>
-          </a>
+        </div> -->
 
-          <a href="#0" class="card card-sm rounded-2 border-0">
-            <div class="card-img rounded-2 mb-3">
-              <img src="./img/program-highlights-img-2.jpg" alt="">
-            </div>
-            <h4 class="card-title mb-0">
-              40% of all total time dedicated to experiential learning
-            </h4>
-          </a>
 
-          <a href="#0" class="card card-sm rounded-2 border-0">
-            <div class="card-img rounded-2 mb-3">
-              <img src="./img/program-highlights-img-3.jpg" alt="">
-            </div>
-            <h4 class="card-title mb-0">
-              12-week mandatory internship
-            </h4>
-          </a>
+        <div class="js-carousel-highlights owl-carousel owl-theme">
+          <div class="item">
+            <a href="#0" class="card card-sm rounded-2 border-0">
+              <div class="card-img rounded-2 mb-3">
+                <img src="./img/program-highlights-img-1.jpg" alt="">
+              </div>
+              <h4 class="card-title mb-0">
+                16-month (4-term) full-time program
+              </h4>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#0" class="card card-sm rounded-2 border-0">
+              <div class="card-img rounded-2 mb-3">
+                <img src="./img/program-highlights-img-2.jpg" alt="">
+              </div>
+              <h4 class="card-title mb-0">
+                40% of all total time dedicated to experiential learning
+              </h4>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#0" class="card card-sm rounded-2 border-0">
+              <div class="card-img rounded-2 mb-3">
+                <img src="./img/program-highlights-img-3.jpg" alt="">
+              </div>
+              <h4 class="card-title mb-0">
+                12-week mandatory internship
+              </h4>
+            </a>
+          </div>
+      </div>
 
-        </div>
+
       </div>
     </section>
 
@@ -390,6 +399,27 @@
     <script src="./js/owl.carousel.min.js"></script>
 
     <script>
+      $('.js-carousel-highlights').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          autoplay:true,
+          autoplayTimeout:2000,
+          autoplayHoverPause:true,
+          lazyLoad:true,
+          responsive:{
+            0:{
+                items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
       $('.owl-carousel').owlCarousel({
           loop:true,
           margin:40,
