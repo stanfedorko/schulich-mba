@@ -380,6 +380,15 @@ h5.smaller,
   border-left: 4px solid #2960A7;
 }
 
+.sm-screen-scroll {
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .sm-screen-scroll {
+    overflow-x: auto;
+  }
+}
+
 
 /* btns */
 .btn-warning {
