@@ -372,6 +372,33 @@ h5.smaller,
   background-color: #fbfdff;
 }
 
+@media (max-width: 1200px) {
+  .fixed-bottom-sm-sreen {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1022;
+  }
+  .sm-reset-container-padding.fixed-bottom-sm-sreen .rounded-2 {
+    border-radius: 0 !important;
+  }
+  .sm-reset-container-padding.fixed-bottom-sm-sreen .container {
+    padding-left: 10px;
+  }
+  .sm-reset-container-padding .container {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .sm-reset-container-padding .container-fluid {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
 .bg-right-bottom {
   background-position: right bottom;
 }
