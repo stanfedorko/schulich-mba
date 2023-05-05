@@ -292,6 +292,9 @@ h5.smaller,
 .text-white {
   color: #F9FCFF !important;
 }
+.text-primary {
+  color: #2960A7 !important;
+}
 .text-black {
   color: #0C1D2E !important;
 }
@@ -437,6 +440,10 @@ h5.smaller,
 .btn-light {
   background-color: #F9FCFF;
   border: none;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  font-size: 18px !important;
 }
 
 
